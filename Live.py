@@ -22,7 +22,7 @@ def load_game():
             else:
                 no_exception = True
         except ValueError as e:
-            print("\t\t!!!!!!!!!!!!!!!   Numbers 1, 2, 3 are only allowed   !!!!!!!!!!!!!!!!!\n")
+            print("\t\t Only numbers 1, 2 and 3 are allowed!\n")
 
     no_exception = False
     while not no_exception:
@@ -34,7 +34,7 @@ def load_game():
             else:
                 no_exception = True
         except ValueError as e:
-            print("\t\t!!!!!!!!!!!!!!!   Numbers from 1 to 5 are only allowed   !!!!!!!!!!!!!!!!!\n")
+            print("\t\t Only numbers from 1 to 5 are allowed!\n")
 
     if user__game_choice == 2:
         GuessGame.set_difficulty(user__difficulty_choice)
